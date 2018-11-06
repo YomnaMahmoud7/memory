@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Memory Game</title>
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body >
+           <div id="score-section">
+		        <h1 id="title">Memory Game</h1>
+				<div class="span-div">
+				    <span class="span-title">Right Choices:</span><span id="right-choices">0</span>/8
+				    <span class="span-title">Remaining Clicks:</span><span id="moves">40</span>
+				    <span id="timer"></span>
+					<br><br>
+				    <span class="restart" onclick=reloadGame()>
+        		        Play Again <i class="fa fa-repeat"></i>
+        	        </span>
+				</div>
+		   </div> 
+            <div id="memory">
+               
+                    <div class="image" onclick="clicks(0)">
+                        <img class="imageItself" >
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+                    </div>
+                    <div class="image" onclick="clicks(1)">
+                        <img class="imageItself" >
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                    <div class="image" onclick="clicks(2)">
+                        <img class="imageItself" >
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                    <div class="image" onclick="clicks(3)">
+                        <img class="imageItself" >
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div> 
+                
+                
+                    <div class="image" onclick="clicks(4)">
+                        <img class="imageItself" >
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                    <div class="image" onclick="clicks(5)">
+                        <img class="imageItself">
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                    <div class="image" onclick="clicks(6)">
+                        <img class="imageItself" >
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                    <div class="image" onclick="clicks(7)">
+                        <img class="imageItself" >
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                
+                
+                    <div class="image" onclick="clicks(8)">
+                        <img class="imageItself">
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                    <div class="image" onclick="clicks(9)">
+                        <img class="imageItself">
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                    <div class="image" onclick="clicks(10)">
+                        <img class="imageItself" >
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                    <div class="image" onclick="clicks(11)">
+                        <img class="imageItself" >
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                
+                
+                    <div class="image" onclick="clicks(12)">
+                        <img class="imageItself">
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                    <div class="image" onclick="clicks(13)">
+                        <img class="imageItself">
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                    <div class="image" onclick="clicks(14)">
+                        <img class="imageItself">
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                    <div class="image" onclick="clicks(15)">
+                        <img class="imageItself">
+                        <img class="back" src="imgs/magic.jpg" alt="question-mark">
+
+                    </div>
+                
+            </div>
+			
+			<div id="myModal" class="modal">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h1>Congratulation!!!!</h1>
+                </div>
+                <div class="modal-body">
+				    <img src="imgs/happy.jpg" class="img-modal-class">
+                    <h2>GREAT ! You Won the first level of the Game </h2>
+                    <h3>Go to Next Level </h3>
+					<span class="restart-in-modal" onclick=reloadGame()>
+        		        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+
+        	        </span>
+                </div>
+                </div>
+
+            </div>
+			
+			<div id="myModal2" class="modal">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h1>You Lose !! We are sorry</h1>
+                </div>
+                <div class="modal-body">
+				    <img src="imgs/cry.jpg" class="img-modal-class">
+                    <h2> </h2>
+                    <h3>You can play Again</h3>
+					<span class="restart-in-modal" onclick=reloadGame()>
+        		        <i class="fa fa-repeat"></i>
+        	        </span>
+					
+                </div>
+                </div>
+
+            </div>
+			
+            <script src="js/script.js"></script>
+			
+			
+		
+
+        
+        
+    </body>
